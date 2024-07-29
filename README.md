@@ -39,8 +39,9 @@ Utilizando o modelo foi possível reverter esse cenário e obter lucro, aumento 
 
 # Analisando o modelo
 Comparação dos modelos : 
-
-![image](https://github.com/user-attachments/assets/7f44b26e-dfdf-4c55-b4c0-0d269824ea21)
+<p align="center">
+<img src=https://github.com/user-attachments/assets/7f44b26e-dfdf-4c55-b4c0-0d269824ea21)/>
+</p>
 
 Após testar todos os modelos e pela avaliação das métricas KS, MCC, Kappa, g-mean e f1-score foi escolhido o modelo gradient boosted trees e utilizando um conjunto de validação e o método GridSearchCV(), juntamente com a estimativa do Threshold que otimizava a métrica Kappa, foi possível otimizar o modelo e obter os seguintes parâmetros:
 max_depth=10
@@ -55,7 +56,7 @@ Além disso no modelo escolhido podemos observar que a métrica KS que tem valor
  - Lucro total estimado com os clientes não inadimplentes = R$132.637.701
 
 # detalhes da análise técnica
-Detalhes sobre como e o porque de todos os passos de todas as etapas da análise de dados podem ser encontrados na pasta reports/resumo_tecnico.pdf [link]()
+Detalhes sobre como e o porque de todos os passos de todas as etapas da análise de dados podem ser encontrados na pasta reports/resumo_tecnico.pdf [link](https://github.com/Gabrielbbe/loan_default_classifier/blob/main/reports/resumo_tecnico.pdf)
 
 # Próximos passos
 
