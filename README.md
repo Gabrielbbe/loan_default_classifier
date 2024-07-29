@@ -1,8 +1,9 @@
 # Detecção de inadimplentes na concessão de empréstimos
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e5dbc382-f9ac-402c-b6c7-df6a11cdf267") >
- <\p>
+  <img src="https://github.com/user-attachments/assets/e5dbc382-f9ac-402c-b6c7-df6a11cdf267") />
+ </p>
+ 
 
 ![image](https://github.com/user-attachments/assets/e5dbc382-f9ac-402c-b6c7-df6a11cdf267)
 
