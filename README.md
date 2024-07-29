@@ -8,7 +8,7 @@ O objetivo principal do projeto é fazer um modelo estatístico para detectar po
 Foi utilizada a metodologia CRISP-DM para a análise em geral, na parte de entendimento dos dados é verificado a qualidade e consistência dos dados, ao final é sugerida mais uma etapa de calibragem do modelo em produção.
 Na modelagem foi utilizada uma abordagem preditiva (onde nosso foco é apenas a capacidade de predição do modelo sem se importar com a interpretação do modelo) e utilizada uma abordagem padrão para tratar os dados desbalanceados, onde a distribuição original dos dados desbalanceados é mantida intocada.
 
-[link_report de negócios](https://github.com/Gabrielbbe/loan_default_classifier/blob/main/reports/report_negocios.pdf)
+[link report de negócios](https://github.com/Gabrielbbe/loan_default_classifier/blob/main/reports/report_negocios.pdf)
 
 [link resumo técnico da análise](https://github.com/Gabrielbbe/loan_default_classifier/blob/main/reports/resumo_tecnico.pdf)
 
