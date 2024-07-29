@@ -14,18 +14,18 @@ Na modelagem foi utilizada uma abordagem preditiva (onde nosso foco é apenas a 
 
 # Business Understanding
 
-Quando um empréstimo é concebido e pago posteriormente o banco lucra, então se torna fundamental possuir critérios para a concessão de crédito para que o prejuízo gerado pelo clientes que não pagarem os empréstimos não cause prejuízo para o banco, para mostrar o quão efetivo pode ser o uso de um modelo irei mostrar um cenário onde todos recebem empréstimos e não é usado nenhum modelo e um cenário onde é utilizado um modelo. 
+Quando um empréstimo é concebido e pago posteriormente o banco lucra, então se torna fundamental possuir critérios para a concessão de crédito para que o prejuízo gerado pelo clientes que não pagarem os empréstimos não cause prejuízo para o banco, para mostrar o quão efetivo pode ser o uso de um modelo irei mostrar um cenário onde todos recebem empréstimos e não é usado nenhum modelo e um cenário onde é utilizado um modelo. \
 
-Mas antes algumas métricas sobre os dados e o modelo importantes para o negócio:
-Porcentagem de inadimplentes: 21.81%
-Porcentagem de não inadimplentes: 78.81%
-Quantidade média de um empréstimo de um não inadimplente: R$9.242
-Quantidade média de um empréstimo de um inadimplente: R$10.861
-Lucro médio gerado em um empréstimo dado a um não inadimplente: R$989
-Prejuízo médio causado por um inadimplente é igual a quantidade média de um empréstimo + o suposto lucro médio em cima do empréstimo é igual a R$12.296
-Custo médio de classificar um bom pagador como mal pagador é igual a R$989 pois perdemos a oportunidade.
+ - Mas antes algumas métricas sobre os dados e o modelo importantes para o negócio:
+ - Porcentagem de inadimplentes: 21.81%
+ - Porcentagem de não inadimplentes: 78.81%
+ - Quantidade média de um empréstimo de um não inadimplente: R$9.242
+ - Quantidade média de um empréstimo de um inadimplente: R$10.861
+ - Lucro médio gerado em um empréstimo dado a um não inadimplente: R$989
+ - Prejuízo médio causado por um inadimplente é igual a quantidade média de um empréstimo + o suposto lucro médio em cima do empréstimo é igual a R$12.296
+ - Custo médio de classificar um bom pagador como mal pagador é igual a R$989 pois perdemos a oportunidade.
 
-porcentagem de falsos negativos e falsos positivos no modelo final.
+ - Porcentagem de falsos negativos e falsos positivos no modelo final.
 
 # Comparação do cenário sem modelo com o cenário com modelo
 
