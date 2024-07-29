@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e5dbc382-f9ac-402c-b6c7-df6a11cdf267") />
-  <em> Figura 1 </em>
  </p>
  
 O objetivo principal do projeto é fazer um modelo estatístico para detectar possíveis inadimplentes para a concessão de empréstimos para diminuir os gastos e aumentar o lucro do banco. Para isso foi utilizado técnicas avançadas de análise de dados para detectar padrões e extrair insights dos dados, modelos de regressão binária clássico e bayesiano com função de ligação asssimétrica e modelos ensemble.
@@ -44,7 +43,7 @@ Comparação dos modelos :
 <p align="center">
 <img src="https://github.com/user-attachments/assets/7f44b26e-dfdf-4c55-b4c0-0d269824ea21" />
   
- <p> <em>Figura 2, nesta imagem temos a média da performance dos modelos em 3 k-folds estratificados de acordo com a variável resposta. rf = random forest, xgbc=gradient boosted trees, loglog/cloglog = regressão clássica com função de ligação loglog/cloglog, rpc = regressão baysiana com função de ligação cauchito </em> </p>
+ <p> <em>Nesta imagem temos a média da performance dos modelos em 3 k-folds estratificados de acordo com a variável resposta. rf = random forest, xgbc=gradient boosted trees, loglog/cloglog = regressão clássica com função de ligação loglog/cloglog, rpc = regressão baysiana com função de ligação cauchito </em> </p>
 </p>
 
 Após testar todos os modelos e pela avaliação das métricas KS, MCC, Kappa, g-mean e f1-score foi escolhido o modelo gradient boosted trees e utilizando um conjunto de validação e o método GridSearchCV(), juntamente com a estimativa do Threshold que otimizava a métrica Kappa, foi possível otimizar o modelo e obter os seguintes parâmetros:
