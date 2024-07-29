@@ -16,7 +16,7 @@ Na modelagem foi utilizada uma abordagem preditiva (onde nosso foco é apenas a 
 
 Quando um empréstimo é concebido e pago posteriormente o banco lucra, então se torna fundamental possuir critérios para a concessão de crédito para que o prejuízo gerado pelo clientes que não pagarem os empréstimos não cause prejuízo para o banco, para mostrar o quão efetivo pode ser o uso de um modelo irei mostrar um cenário onde todos recebem empréstimos e não é usado nenhum modelo e um cenário onde é utilizado um modelo. 
 
- - Mas antes algumas métricas sobre os dados e o modelo importantes para o negócio:
+Mas antes algumas métricas sobre os dados e o modelo importantes para o negócio:
  - Porcentagem de inadimplentes: 21.81%
  - Porcentagem de não inadimplentes: 78.81%
  - Quantidade média de um empréstimo de um não inadimplente: R$9.242
@@ -35,7 +35,8 @@ Utilizando o modelo foi possível reverter esse cenário e obter lucro, aumento 
  - porcentagem de falsos negativos(classificar um mal pagador como bom pagador) igual a aproximadamente 7%
  - porcentagem de verdadeiros negativos(classificar bom pagador como bom pagador) igual a aproximadamente 75%
  - porcentagem de verdadeiros positivos(classificar mal pagador como mal pagador) igual a aproximadamente 14%
-(Como houve um arredondamento de casas decimais para fins de simplificação as porentagens não somam em 100%, mas considerando as casas decimais no código a soma é igual a 100%.)
+   
+(Como houve um arredondamento de casas decimais para fins de simplificação as porcentagens não somam em 100%, mas considerando as casas decimais no código a soma é igual a 100%.)
 
 # Analisando o modelo
 Comparação dos modelos : 
@@ -49,7 +50,7 @@ max_depth=10
 min_samples_leaf=3
 min_sample_split=7
 threshold(regra de corte)=0.01
-Além disso no modelo escolhido podemos observar que a métrica KS que tem valor entre 0.6 e 0.7 o que indica que o modelo tem uma boa capacidade de distinção entre as classes. Um fato importante de se comentar é que a regressão bayesiana com função de ligação cauchito poderia ter um desempenho melhor se otimizarmos alguns de seus hiperparâmetros, mas como ela é muito custosa compucationalmente e demora muito tempo para treinar e como os outros modelos estavam com um desempenho OK acabei deixando essa otimização de lado e prossegui com os outros modelos. \
+Além disso no modelo escolhido podemos observar que a métrica KS que tem valor entre 0.6 e 0.7 o que indica que o modelo tem uma boa capacidade de distinção entre as classes. Um fato importante de se comentar é que a regressão bayesiana com função de ligação cauchito poderia ter um desempenho melhor se otimizarmos alguns de seus hiperparâmetros, mas como ela é muito custosa compucationalmente e demora muito tempo para treinar e como os outros modelos estavam com um desempenho OK acabei deixando essa otimização de lado e prossegui com os outros modelos. 
 
 Algumas estimativas do financeiro, de acordo com o conjunto de dados usando o modelo:
  - Faturamento estimado = R$151.097.396
