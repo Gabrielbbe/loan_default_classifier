@@ -41,6 +41,7 @@ Utilizando o modelo foi possível reverter esse cenário e obter lucro, aumento 
 Comparação dos modelos : 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/7f44b26e-dfdf-4c55-b4c0-0d269824ea21" />
+  <em>Média da performance dos modelos em 3 k-folds estratificados de acordo com a variável resposta. rf = random forest, xgbc=gradient boosted trees, loglog/cloglog = regressão clássica com função de ligação loglog/cloglog, rpc = regressão baysiana com função de ligação cauchito </em>
 </p>
 
 Após testar todos os modelos e pela avaliação das métricas KS, MCC, Kappa, g-mean e f1-score foi escolhido o modelo gradient boosted trees e utilizando um conjunto de validação e o método GridSearchCV(), juntamente com a estimativa do Threshold que otimizava a métrica Kappa, foi possível otimizar o modelo e obter os seguintes parâmetros:
@@ -48,11 +49,11 @@ max_depth=10
 min_samples_leaf=3
 min_sample_split=7
 threshold(regra de corte)=0.01
-Além disso no modelo escolhido podemos observar que a métrica KS que tem valor entre 0.6 e 0.7 o que indica que o modelo tem uma boa capacidade de distinção entre as classes.
+Além disso no modelo escolhido podemos observar que a métrica KS que tem valor entre 0.6 e 0.7 o que indica que o modelo tem uma boa capacidade de distinção entre as classes. Um fato importante de se comentar é que a regressão bayesiana com função de ligação cauchito poderia ter um desempenho melhor se otimizarmos alguns de seus hiperparâmetros, mas como ela é muito custosa compucationalmente e demora muito tempo para treinar e como os outros modelos estavam com um desempenho OK acabei deixando essa otimização de lado e prossegui com os outros modelos. \
 
- - Financeiro
- - faturamento estimado = R$151.097.396
- - gasto com inadimplentes e o empréstimo dado aos não inadimplentes = R$18.459.695
+Algumas estimativas do financeiro, de acordo com o conjunto de dados usando o modelo:
+ - Faturamento estimado = R$151.097.396
+ - Gasto com inadimplentes e o empréstimo dado aos não inadimplentes = R$18.459.695
  - Lucro total estimado com os clientes não inadimplentes = R$132.637.701
 
 # detalhes da análise técnica
