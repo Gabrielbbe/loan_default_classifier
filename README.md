@@ -60,7 +60,7 @@ Detalhes sobre como e o porque de todos os passos de todas as etapas da análise
 
 # Próximos passos
 
-Podería ser feito alguns experimentos como por exemplo:  
+Alguns experimentos poderiam ser feitos, como por exemplo:  
 - Modificar a transformação que é feita nas variável categóricas, utilizando outras técnicas como por exemplo o WOE(Weight of Evidence), entre outras já que existem várias, e verificar o impacto que isso tem no modelo.
 - Adicionar mais variáveis ao modelo.
 - Ajustar outros modelos de classificação.
