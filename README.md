@@ -28,7 +28,8 @@ Mas antes algumas métricas sobre os dados e o modelo importantes para o negóci
 
 # traduzindo as necessidades de negócios para o objetivo da análise de dados
  Queremos detectar os clientes inadimplentes e os clientes não inadimeplentes de maneira balanceada, não errando muito julgando todos como inadimplentes para não diminiur os lucros, e não errando em julgar todos como não inadimplentes aumentando assim os gastos e nos prejudicando, então teremos que utilizar técnicas que consideram os verdadeiros positivos e os verdadeiros negativos. Para isso irei calibrar os modelos considerando as métricas KAPPA, MCC, G-Mean, F1-Score e KS. Irei utilizá-las pois o KAPPA, MCC e G-MEAN consideram as observações que foram positivas e negativas, o F1-score considera a precisão e recall, ou seja não considera os verdadeiro negativos, mas utilizei apenas para verificar como estava essa relação mas poderíamos descartá-la sem problemas e a métrica KS é um indicativo do quão bem o nosso modelo está distinguindo cada uma das classes em termos de probabilidades.
- 
+ Como modelos irei utilizar regressão binária clássica com função de ligação assimétrica (loglog e cloglog) e regressão bayesiana com função de ligação cauchito pois temos dados a variável resposta dicotômica e desbalanceada. Além disso irei utilizar dois modelos ensemble famosos, o Random Forest e o gradient boosted trees(xgboost) pois tendem a performar bem em tarefas de predição em classificação.
+
 # Comparação do cenário sem modelo com o cenário com modelo
 
 No cenário sem modelo não havia lucro, pegando a soma quantidade de dinheiro de todos os empréstimos vezes a taxa de juros menos a soma da quantidade de dinheiro nos empréstimos vezes a taxa de juros dos clientes inadimplentes havia um prejuízo de R$ 37.327.036.
@@ -65,8 +66,14 @@ Algumas estimativas do financeiro, de acordo com o conjunto de dados usando o mo
  - Gasto com inadimplentes e o empréstimo dado aos não inadimplentes = R$18.459.695
  - Lucro total estimado com os clientes não inadimplentes = R$132.637.701
 
-# detalhes da análise técnica
-Detalhes sobre como e o porque de todos os passos de todas as etapas da análise de dados podem ser encontrados na pasta reports/resumo_tecnico.pdf [link](https://github.com/Gabrielbbe/loan_default_classifier/blob/main/reports/resumo_tecnico.pdf)
+# Detalhes da análise técnica
+
+Resumo da pipeline dos dados:
+<p align="center">
+<img src="https://github.com/user-attachments/assets/4387fa42-b22d-4368-aa12-a027ee70f47e)"/>
+</p>
+
+Mais detalhes sobre como e o porque de todos os passos de todas as etapas da análise de dados podem ser encontrados na pasta reports/resumo_tecnico.pdf [link](https://github.com/Gabrielbbe/loan_default_classifier/blob/main/reports/resumo_tecnico.pdf)
 
 # Próximos passos
 
