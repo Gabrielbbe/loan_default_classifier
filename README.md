@@ -24,9 +24,11 @@ Mas antes algumas métricas sobre os dados e o modelo importantes para o negóci
  - Lucro médio gerado em um empréstimo dado a um não inadimplente: R$989
  - Prejuízo médio causado por um inadimplente é igual a quantidade média de um empréstimo + o suposto lucro médio em cima do empréstimo é igual a R$12.296
  - Custo médio de classificar um bom pagador como mal pagador é igual a R$989 pois perdemos a oportunidade.
-
  - Porcentagem de falsos negativos e falsos positivos no modelo final.
 
+# traduzindo as necessidades de negócios para o objetivo da análise de dados
+ Queremos detectar os clientes inadimplentes e os clientes não inadimeplentes de maneira balanceada, não errando muito julgando todos como inadimplentes para não diminiur os lucros, e não errando em julgar todos como não inadimplentes aumentando assim os gastos e nos prejudicando, então teremos que utilizar técnicas que consideram os verdadeiros positivos e os verdadeiros negativos. Para isso irei calibrar os modelos considerando as métricas KAPPA, MCC, G-Mean, F1-Score e KS. Irei utilizá-las pois o KAPPA, MCC e G-MEAN consideram as observações que foram positivas e negativas, o F1-score considera a precisão e recall, ou seja não considera os verdadeiro negativos, mas utilizei apenas para verificar como estava essa relação mas poderíamos descartá-la sem problemas e a métrica KS é um indicativo do quão bem o nosso modelo está distinguindo cada uma das classes em termos de probabilidades.
+ 
 # Comparação do cenário sem modelo com o cenário com modelo
 
 No cenário sem modelo não havia lucro, pegando a soma quantidade de dinheiro de todos os empréstimos vezes a taxa de juros menos a soma da quantidade de dinheiro nos empréstimos vezes a taxa de juros dos clientes inadimplentes havia um prejuízo de R$ 37.327.036.
