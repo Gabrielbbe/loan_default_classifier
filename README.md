@@ -1,7 +1,7 @@
 # Detecção de inadimplentes na concessão de empréstimos
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e5dbc382-f9ac-402c-b6c7-df6a11cdf267") />
+  <img src="https://github.com/user-attachments/assets/e5dbc382-f9ac-402c-b6c7-df6a11cdf267" />
  </p>
  
 O objetivo principal do projeto é fazer um modelo estatístico para detectar possíveis inadimplentes para a concessão de empréstimos para diminuir os gastos e aumentar o lucro do banco. Para isso foi utilizado técnicas avançadas de análise de dados para detectar padrões e extrair insights dos dados, modelos de regressão binária clássico e bayesiano com função de ligação asssimétrica e modelos ensemble.
@@ -70,7 +70,7 @@ Algumas estimativas do financeiro, de acordo com o conjunto de dados usando o mo
 
 Resumo da pipeline dos dados:
 <p align="center">
-<img src="https://github.com/user-attachments/assets/4387fa42-b22d-4368-aa12-a027ee70f47e)"/>
+<img src="https://github.com/user-attachments/assets/4387fa42-b22d-4368-aa12-a027ee70f47e" />
 </p>
 
 Mais detalhes sobre como e o porque de todos os passos de todas as etapas da análise de dados podem ser encontrados na pasta reports/resumo_tecnico.pdf [link](https://github.com/Gabrielbbe/loan_default_classifier/blob/main/reports/resumo_tecnico.pdf)
