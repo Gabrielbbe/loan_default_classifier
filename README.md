@@ -57,7 +57,7 @@ min_samples_leaf=3
 
 min_sample_split=7
 
-threshold(regra de corte)=0.01
+threshold(regra de corte)=0.01 que foi estimada de tal forma a ser o valor que maximiza o coeficeinte KAPPA.
 
 Além disso no modelo escolhido podemos observar que a métrica KS que tem valor entre 0.6 e 0.7 o que indica que o modelo tem uma boa capacidade de distinção entre as classes. Um fato importante de se comentar é que a regressão bayesiana com função de ligação cauchito poderia ter um desempenho melhor se otimizarmos alguns de seus hiperparâmetros, mas como ela é muito custosa compucationalmente e demora muito tempo para treinar e como os outros modelos estavam com um desempenho OK acabei deixando essa otimização de lado e prossegui com os outros modelos. 
 
